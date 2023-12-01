@@ -51,7 +51,7 @@ document.addEventListener('keydown', function(event) {
 
 function copyEmailToClipboard() {
     const textarea = document.createElement('textarea');
-    textarea.value = 'your.email@example.com';
+    textarea.value = 'oakleyworkman@gmail.com';
     document.body.appendChild(textarea);
     textarea.select();
     document.execCommand('copy');
