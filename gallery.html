@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ofelia Workshop - Gallery</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed">
+        <style>
+            body {
+                font-family: 'IBM Plex Sans Condensed';font-size: 22px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="slider-container">
+            <button id="prevBtn" onclick="prevImage()">❮</button>
+            <img class="slider-image" src="./pictures/image1_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image2_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image3_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image4_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image5_full.jpg" alt="Image">
+            <video id="myVideo" class="slider-image" autoplay muted playsinline loop><source src="./pictures/video1.mp4" type="video/mp4"></video>
+            <video id="myVideo" class="slider-image" autoplay muted playsinline loop><source src="./pictures/video2.mp4" type="video/mp4"></video>
+            <img class="slider-image" src="./pictures/image8.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image9_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image10.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image11_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image12_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image13.jpg" alt="Image">
+            <video id="myVideo" class="slider-image" autoplay muted playsinline loop><source src="./pictures/video3.mp4" type="video/mp4"></video>
+            <img class="slider-image" src="./pictures/image15_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image16_full.jpg" alt="Image">
+            <img class="slider-image" src="./pictures/image17_full.jpg" alt="Image">
+            <button id="nextBtn" onclick="nextImage()">❯</button>
+        </div>
+
+        <script src="./index.js"></script> <!-- This script element for javascript code must come after the other body elements-->
+    </body>
+</html>
