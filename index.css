@@ -10,14 +10,23 @@
     --a-hover: lightblue;
 }
 
-/*  IBM Plex, Sans */
-body {
-    font-family: Inconsolata, monospace;
-    margin: 0px;
+.navbar {
+  background-color: var(--navbar-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-a:hover {
-  color: var(--a-hover);
+.navbar li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 25px;
+  padding-right: 5px;
 }
 
 a {
@@ -25,7 +34,16 @@ a {
   color: white;
 }
 
-#email:hover {
+a:hover {
+  color: var(--a-hover);
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
   color: var(--a-hover);
   cursor: pointer;
 }
@@ -35,11 +53,6 @@ li {
     display: flex;
     padding-top: 7px;
     padding-bottom: 7px;
-}
-
-#right-text {
-  position: fixed;
-  padding: 10px;
 }
 
 .slider-container {
@@ -79,44 +92,34 @@ li {
 }
 .pic-collage{
   margin-top:20px;
+  padding-top:70px;
   display:grid;
   gap:12px;
   background: white;
   min-height:1fr;
-  grid-template-areas:'one two two three four rb rb'
-                      'five two two six six rb rb'
-                      'seven seven eight six six rb rb'
-                      'seven seven nine nine ten rb rb'
-                      'eleven twelve nine nine thirteen rb rb'
-                      'fourteen fourteen fifteen sixteen sixteen rb rb'
-                      'fourteen fourteen seventeen sixteen sixteen rb rb';  /* remove ';' for full */
+  grid-template-areas:'one two two three four'
+                      'five two two six six'
+                      'seven seven eight six six'
+                      'seven seven nine nine ten'
+                      'eleven twelve nine nine thirteen'
+                      'fourteen fourteen fifteen sixteen sixteen'
+                      'fourteen fourteen seventeen sixteen sixteen';  /* remove ';' for full */
 
-                      /* 'eighteen nineteen nineteen twenty twenty-one rb rb'
-                      'twenty-two nineteen nineteen twenty-three twenty-three rb rb'
-                      'twenty-four twenty-four twenty-five twenty-three twenty-three rb rb'
-                      'twenty-four twenty-four twenty-six twenty-six twenty-seven rb rb'
-                      'twenty-eight twenty-nine twenty-six twenty-six thirty rb rb'
-                      'thirty-one thirty-one thirty-two thirty-three thirty-three rb rb'
-                      'thirty-one thirty-one thirty-four thirty-three thirty-three rb rb'; */
+                      /* 'eighteen nineteen nineteen twenty twenty-one'
+                      'twenty-two nineteen nineteen twenty-three twenty-three'
+                      'twenty-four twenty-four twenty-five twenty-three twenty-three'
+                      'twenty-four twenty-four twenty-six twenty-six twenty-seven'
+                      'twenty-eight twenty-nine twenty-six twenty-six thirty'
+                      'thirty-one thirty-one thirty-two thirty-three thirty-three'
+                      'thirty-one thirty-one thirty-four thirty-three thirty-three'; */
   grid-template-rows: repeat(7, 1fr);  /* change to 14 for full */
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .child{
   width:100%;
   height:100%;
   display:grid;
   place-items:bottom;
-}
-@media (min-width: 500px) {
-  .pic-collage {
-    grid-template-columns: repeat(5, 1fr) 300px;
-  }
-
-  .rb {
-    background: var(--navbar-background);
-    width: 100%;
-    height: 100%;
-  }
 }
 #one{
   grid-area:one;
@@ -221,7 +224,3 @@ li {
 #thirty-four{
   grid-area:thirty-four;
 } */
-
-#right-block{
-  grid-area:rb;
-}
