@@ -95,23 +95,21 @@ li {
   gap:12px;
   background: white;
   min-height:1fr;
-  grid-template-areas:'one two two three four'
-                      'five two two six six'
-                      'seven seven eight six six'
-                      'seven seven nine nine ten'
-                      'eleven twelve nine nine thirteen'
-                      'fourteen fourteen fifteen sixteen sixteen'
-                      'fourteen fourteen seventeen sixteen sixteen';  /* remove ';' for full */
 
-                      /* 'eighteen nineteen nineteen twenty twenty-one'
-                      'twenty-two nineteen nineteen twenty-three twenty-three'
-                      'twenty-four twenty-four twenty-five twenty-three twenty-three'
-                      'twenty-four twenty-four twenty-six twenty-six twenty-seven'
-                      'twenty-eight twenty-nine twenty-six twenty-six thirty'
-                      'thirty-one thirty-one thirty-two thirty-three thirty-three'
-                      'thirty-one thirty-one thirty-four thirty-three thirty-three'; */
-  grid-template-rows: repeat(7, 1fr);  /* change to 14 for full */
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 'one five seven seven eleven fourteen fourteen'
+                      'two two seven seven twelve fourteen fourteen'
+                      'two two eight nine nine fifteen seventeen'
+                      'three six six nine nine sixteen sixteen'
+                      'four six six ten thirteen sixteen sixteen';
+
+                      /*'eighteen twenty-two twenty-four twenty-four twenty-eight thirty-one thirty-one'
+                      'nineteen nineteen twenty-four twenty-four twenty-nine thirty-one thirty-one'
+                      'nineteen nineteen twenty-five twenty-six twenty-six thirty-two thirty-four'
+                      'twenty twenty-three twenty-three twenty-six twenty-six thirty-three thirty-three'
+                      'twenty-one twenty-three twenty-three twenty-seven thirty thirty-three thirty-three'*/
+
+  grid-template-rows: repeat(5, 1fr);  /* change to 10 for full */
+  grid-template-columns: repeat(7, 1fr);
 }
 .child{
   width:100%;
